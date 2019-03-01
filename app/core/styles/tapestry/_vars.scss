@@ -1,0 +1,283 @@
+$import-normalize:        true;
+$import-typography:       true;
+$import-utility-classes:  true;
+
+$use-webpack-config:      true;
+
+$import-animations:       true;
+$import-avatar:           true;
+$import-badge:            true;
+$import-box:              false;
+$import-button:           true;
+$import-checkbox:         true;
+$import-dropdown:         false;
+$import-fieldset:         false;
+$import-form:             true;
+$import-grid:             true;
+$import-responsive-grid:  true;
+$import-icons:            true;
+$import-input:            true;
+$import-input-group:      true;
+$import-input-states:     true;
+$import-label:            true;
+$import-loading-states:   true;
+$import-list:             true;
+$import-media:            true;
+$import-meter:            true;
+$import-modal:            true;
+$import-notification:     true;
+$import-panel:            true;
+$import-pellet:           true;
+$import-popovers:         false;
+$import-pseudo-classes:   true;
+$import-radio:            true;
+$import-select:           false;
+$import-spinner:          true;
+$import-switch:           true;
+$import-table:            true;
+$import-responsive-table: false;
+$import-tabs:             true;
+$import-textarea:         true;
+$import-tooltip:          false;
+
+// UTILS
+
+// Colors
+// Ordered from light to dark
+
+// -- Grey
+
+$athens-gray: #f3f4f5;
+$alabaster: $athens-gray;
+$aqua-haze: #f1f4f7;
+$gallery: #efefef;
+$mischka-light: #e1e2e8;
+$mischka: #c9cedc;
+$ghost: #bfc2d1;
+$aluminium: #a6aab8;
+$pale-sky: #656b81;
+$shuttle-gray-2: #5f677a;
+$bright-gray: #3b4052;
+
+// -- Yellow
+
+$marigold-yellow: #fae177;
+$supernova: #facf00;
+
+// -- Red
+
+$vermilion: #f83f02;
+$mandys-pink: #f7c0b6;
+$wewak: #f4ada1;
+
+// -- Blue
+
+$cadet-blue: #aeb2c2;
+$dodger-blue: #458dff;
+
+// -- Green
+
+$water-leaf: #a9e8e1;
+$atlantis: #75db3e;
+$ocean-green: #46b489;
+
+// Color aliases
+
+$neutral: $shuttle-gray-2;
+$primary: $dodger-blue;
+$secondary: $cadet-blue;
+$alt: $cadet-blue;
+$info: $supernova;
+$validate: $atlantis; // green
+$error: $vermilion;
+
+$base-type-body-color: $pale-sky;
+$base-type-title-color: $bright-gray;
+$base-type-secondary-color: $aluminium;
+
+$base-border-color: $gallery;
+$base-border-secondary-color: rgba($secondary, .2);
+$base-border-alt-color: $mischka-light;
+$base-shadow-color: $bright-gray;
+$base-icon-color: $ghost;
+$base-selected-color: $primary;
+
+// Logo colors
+
+$logo--dodger-blue: #309eff;
+$logo--gold: #ffd100;
+$logo--vermilion: #f40;
+
+// Project colors
+
+$proj--melon: #fcbfb5;
+$proj--anakiwa: #9dc9fe;
+$proj--water-leaf: #a2e8e2;
+$proj--kournikova: #fedf74;
+$proj--melrose: #baadfd;
+$proj--goldenrod: #ffcb6d;
+$proj--yellow-green: #bfe698;
+$proj--cherub: #f7d0f1;
+$proj--swiss-coffee: #ddd5d3;
+
+// Modifiers
+$darken-background--l: rgba(0, 30, 30, .028);
+$darken-background--d: rgba(0, 30, 30, .1);
+
+// Spinner
+$spinner-primary-color: $dodger-blue;
+
+// Spaces
+
+// Typography
+
+$ff--ss-serif: "FreightSansPro", system, -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+$ff--ss-serif-new: "FreightSansPro", system, -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+$ff--headlines: "Soleil", "FreightSansPro", system, sans-serif;
+$ff--ss-serif-alt: "Montserrat", system, -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+$base-fz: 16px;
+$base-vu: 6px;
+$ms-ratio: 1.12;
+
+$fz--new-xxs: 10px;
+$fz--new-xs: 12px;
+$fz--new-s: 13px;
+$fz--new-splus: 15px;
+$fz--new-m: 16px;
+$fz--new-ml: 18px;
+$fz--new-l: 20px;
+$fz--new-xl: 21px;
+$fz--new-xxl: 36px;
+
+// Weights
+
+$fw--light: 200;
+$fw--book: 300;
+$fw--regular: 400;
+$fw--medium: 500;
+$fw--semi-bold: 600;
+$fw--bold: 700;
+$fw--black: 800;
+
+// Radius
+
+$base-radius: 2px;
+
+// Buttons
+
+$btn-base-colors: $primary $alt $validate $info $error;
+$btn-hover-colors: $primary $alt $validate $info $error;
+
+$btn-outline-base-color: $base-type-body-color;
+$btn-outline-base-border-color: $base-border-secondary-color;
+
+$btn-outline-hover-color: $base-type-body-color;
+$btn-outline-hover-border-color: $base-border-color;
+
+// Tabs
+
+$tab-base-color: $secondary;
+$tab-selected-color: $primary;
+$tab-hover-color: $base-type-title-color;
+$tab-underline-size: 2px;
+
+// Avatar
+
+$avatar-colors: $shuttle-gray-2 $proj--water-leaf $proj--anakiwa $proj--melrose $proj--goldenrod $proj--kournikova $proj--yellow-green $proj--cherub $proj--swiss-coffee $proj--melon;
+
+// grid
+
+$grid-gutter-width: 30px; //r(5);
+
+// Zindexes
+
+$zi-layers: (
+  "notification": 9000,
+  "tooltip":      9000,
+  "onboarding":   8750,
+  "overlayUpgrade": 8501,
+  "overlay":      8500,
+  "sidebar":      7500,
+  "search":       7000,
+  "meetingNav":   6000,
+  "meetingMenu":  5000,
+  "pushingPanel": 5000,
+  "dropdown":     1000,
+  "popover":      1000,
+  "overBase":     2,
+  "base":         1,
+  "below":        -1
+);
+
+// Famous components widths
+$components-sizes: (
+  "contentExplorer": 450px,
+  "pushingPanel": 300px,
+  "stackablePanel": 450px,
+  // sidebar
+  "sidebarWidth": 60px,
+  "sidebarHeight": 60px,
+  // meeting navbar
+  "meetingNavBarWidth": 60px,
+  "meetingNavBarHeight": 61px,
+  "appPageSubsection": 400px
+);
+
+@function csz($component) {
+  @if not map-has-key($components-sizes, $component) {
+    @warn "No component found for `#{$component}` in $components-sizes map. Property omitted.";
+  }
+
+  @return map-get($components-sizes, $component);
+}
+
+//Meeting elements flex order
+
+@function eo($element) {
+  @if not map-has-key($meeting-elements-order, $element) {
+    @warn "No element found for `#{$element}` in $meeting-elements-order map. Property omitted.";
+  }
+
+  @return map-get($meeting-elements-order, $element);
+};
+
+$meeting-elements-order: (
+  // meeting mobile
+  "meetingNav":  1,
+  "meetingBody": 2,
+  "meetingPrivateNotes": 2,
+  "meetingChat": 3,
+  "meetingMenu": 4,
+  // meeting tablet
+  "meetingContentExplorerTablet": 1,
+  "meetingBodyTablet": 2,
+  "stackablePanel": 3,
+  "pushingPanel": 4,
+  "meetingNavTablet":  6,
+  // navbar mobile
+  "meetingNavBarParticipants": 1,
+  "meetingNavBarExport": 2,
+  "meetingNavBarOptions": 3,
+  "meetingNavBarComments": 4,
+  "meetingNavBarPrivateNotes": 5,
+  "meetingNavBarTimer": 6,
+  // navbar tablet
+  "meetingNavBarParticipantsTablet": 1,
+  "meetingNavBarExportTablet": 2,
+  "meetingNavBarOptionsTablet": 3,
+  "meetingNavBarCommentsTablet": 4,
+  "meetingNavBarPrivateNotesTablet": 5,
+  "meetingNavBarTimerTablet": 6,
+);
+
+// Switch
+
+$switch-width: r(8);
+$switch-height: r(4);
+$switch-inner-space: r(2);
+$switch-width--s: r(6);
+$switch-height--s: r(4);
+$switch-inner-space--s: r(1);
+$switch-checked-color: $primary;
+$switch-unchecked-color: $secondary;
+$switch-radius: $base-radius;

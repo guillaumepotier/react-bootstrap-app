@@ -1,0 +1,250 @@
+# https://github.com/Wisembly/tapestry/blob/master/.sass-lint.yml
+
+files:
+  include: 'app/**/*.scss'
+  ignore:
+    - 'app/components/TimePicker/style.scss'
+options:
+  formatter: stylish
+  merge-default-rules: false
+rules:
+  border-zero:
+    - 2
+    - convention: "0"
+  brace-style:
+    - 2
+    - style: 'stroustrup'
+  class-name-format:
+    - 0
+    - convention: hyphenatedlowercase
+  clean-import-paths:
+    - 2
+    - filename-extension: false
+      leading-underscore: false
+  empty-args:
+    - 2
+    - include: false
+  empty-line-between-blocks:
+    - 2
+    - allow-single-line-rulesets: false
+    - include: true
+  extends-before-declarations: 2
+  extends-before-mixins: 2
+  final-newline:
+    - 2
+    - include: true
+  force-attribute-nesting: 0
+  force-element-nesting: 0
+  force-pseudo-nesting: 0
+  function-name-format:
+    - 0
+    - allow-leading-underscore: true
+      convention: hyphenatedlowercase
+  hex-length:
+    - 2
+    - style: short
+  hex-notation:
+    - 2
+    - style: lowercase
+  id-name-format:
+    - 0
+    - convention: hyphenatedlowercase
+  indentation:
+    - 2
+    - size: 2
+  leading-zero:
+    - 2
+    - include: false
+  mixin-name-format:
+    - 0
+    - allow-leading-underscore: true
+      convention: hyphenatedlowercase
+  mixins-before-declarations: 2
+  nesting-depth:
+    - 2
+    - max-depth: 3
+  no-color-keywords: 2
+  no-color-literals:
+    - 2
+    - allow-rgba: true
+  no-css-comments: 0
+  no-debug: 1
+  no-duplicate-properties: 2
+  no-empty-rulesets: 2
+  no-ids: 1
+  no-important: 1
+  no-invalid-hex: 2
+  no-mergeable-selectors: 1
+  no-misspelled-properties:
+    - 2
+    - extra-properties: ['overflow-scrolling']
+  no-qualifying-elements:
+    - 2
+    - allow-element-with-attribute: false
+      allow-element-with-class: false
+      allow-element-with-id: false
+  no-trailing-zero: 2
+  no-transition-all: 1
+  no-url-protocols: 2
+  no-vendor-prefixes: 1
+  one-declaration-per-line: 2
+  placeholder-in-extend: 0
+  placeholder-name-format:
+    - 0
+    - convention: hyphenatedlowercase
+  property-sort-order:
+    - 2
+    - ignore-custom-properties: false
+      order:
+        - include
+        - extend
+        - content
+        - display
+        - visibility
+        - flex-flow
+        - flex-direction
+        - flex-wrap
+        - align-items
+        - justify-content
+        - position
+        - top
+        - right
+        - bottom
+        - left
+        - z-index
+        - float
+        - flex
+        - flex-grow
+        - flex-shrink
+        - flex-basis
+        - order
+        - width
+        - min-width
+        - max-width
+        - height
+        - min-height
+        - max-height
+        - direction
+        - align-self
+        - margin
+        - margin-top
+        - margin-right
+        - margin-bottom
+        - margin-left
+        - padding
+        - padding-top
+        - padding-right
+        - padding-bottom
+        - padding-left
+        - font-family
+        - src
+        - font-size
+        - font-weight
+        - font-style
+        - line-height
+        - text-align
+        - text-transform
+        - text-decoration
+        - text-indent
+        - letter-spacing
+        - text-overflow
+        - word-break
+        - word-wrap
+        - word-spacing
+        - white-space
+        - vertical-align
+        - list-style
+        - list-style-inside
+        - color
+        - background
+        - background-color
+        - background-image
+        - background-position
+        - background-origin
+        - background-repeat
+        - background-size
+        - border
+        - border-top
+        - border-right
+        - border-bottom
+        - border-left
+        - border-width
+        - border-color
+        - border-top-color
+        - border-right-color
+        - border-bottom-color
+        - border-left-color
+        - border-style
+        - border-top-style
+        - border-right-style
+        - border-bottom-style
+        - border-left-style
+        - border-radius
+        - border-top-left-radius
+        - border-top-right-radius
+        - border-bottom-right-radius
+        - border-bottom-left-radius
+        - box-shadow
+        - text-shadow
+        - opacity
+        - filter
+        - '-ms-filter'
+        - overflow
+        - overflow-x
+        - overflow-y
+        - cursor
+        - pointer-events
+        - user-select
+        - outline
+        - resize
+        - transform
+        - transform-style
+        - transform-origin
+        - clip
+        - animation
+        - animation-name
+        - animation-duration
+        - animation-ease
+        - animation-iteration-count
+        - animation-direction
+        - backface-visibility
+        - transition
+        - '-webkit-overflow-scrolling'
+        - appearance
+        - box-sizing
+        - speak
+  quotes:
+    - 2
+    - style: double
+  shorthand-values: 2
+  single-line-per-selector: 2
+  space-after-bang:
+    - 2
+    - include: false
+  space-after-colon:
+    - 2
+    - include: true
+  space-after-comma: 2
+  space-before-bang:
+    - 2
+    - include: true
+  space-before-brace:
+    - 2
+    - include: true
+  space-before-colon: 2
+  space-between-parens:
+    - 2
+    - include: false
+  trailing-semicolon: 2
+  url-quotes: 2
+  variable-for-property:
+    - 0
+    - properties:
+        - color
+        - background
+        - background-color
+  variable-name-format:
+    - 2
+    - allow-leading-underscore: false
+      convention: hyphenatedlowercase
+  zero-unit: 2

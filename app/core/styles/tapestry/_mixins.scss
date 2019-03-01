@@ -1,0 +1,40 @@
+@mixin stretch-over {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@mixin card {
+  background-color: $white;
+  border-radius: $base-radius;
+  box-shadow: 0 rem(3px) r(1) rgba($base-shadow-color, .1);
+}
+
+@mixin smallCapsTitle {
+  font-size: fz(-1.8);
+  font-weight: $fw--semi-bold;
+  line-height: $lh--m;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  color: $base-type-secondary-color;
+}
+
+@mixin ellipsis {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@mixin popperBox {
+  background-color: $white;
+  border: 1px solid $base-border-alt-color;
+  border-radius: $base-radius;
+  box-shadow: 0 0 r(2) rgba($base-shadow-color, .2);
+}
+
+//Spacing using px (for margins and paddings)
+@function spacing($size) {
+  @return $size * 6px;
+}

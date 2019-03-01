@@ -1,0 +1,36 @@
+@import "fonts";
+@import "vars";
+@import "~tapestry-css/src/scss/app";
+@import "utils";
+@import "mixins";
+@import "animations";
+
+// sass-lint:disable no-ids
+
+html,
+body,
+[data-reactroot],
+#app,
+.u-fitHeight {
+  height: 100%;
+}
+
+// sass-lint:enable no-ids
+
+body {
+  font-family: "FreightSansPro", system, -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif; // do not replace by $ff--ss-serif, it doesn't work!
+  color: $bright-gray;
+
+  // no scroll on whole page when on tablet and with sidebar
+
+  &.has-sidebar {
+    @include bp(tablet) {
+      overflow: hidden;
+    }
+  }
+
+}
+
+a {
+  color: $primary;
+}
